@@ -11,7 +11,7 @@ def check(men_prefs, women_prefs, matching):
                 break
             husband = partner[woman]
             # проверка: женщина предпочитает этого мужчину своему текущему партнёру или нет
-            if women_prefs[woman].index(man) < women_prefs[woman].index(husband):
+            if women_prefs[woman].index(man) < women_prefs[woman].index(husband) and men_prefs[man].index(woman) < men_prefs[man].index(wife)::
                 return "Неустойчивое"
     return "Устойчивое"
 
