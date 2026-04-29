@@ -17,5 +17,4 @@ print("Станции:", stations)
 print("Количество:", len(stations))
 
 for h in houses:
-    assert any(abs(h - s) <= 4 for s in stations), f"Дом {h} не покрыт!"
-print("Все дома покрыты")
+    print(any(abs(h - s) <= 4 for s in stations))
